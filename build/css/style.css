@@ -370,7 +370,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #1E1E1E;
 }
 
 a {
@@ -550,8 +550,24 @@ button,
   font-family: "AlumniSans", "RobotoCondensed", sans-serif;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+}
+@media (min-width: 320px) {
+  .body__container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .body__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .body__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .btn {
@@ -1213,31 +1229,213 @@ button,
 }
 
 .header {
-  font-family: "AlumiSans";
-  background-repeat: no-repeat;
   color: #fff;
+  position: relative;
 }
 @media (min-width: 320px) {
   .header {
     background-image: url("../img/back-mobile.png");
     background-size: 100%;
+    padding-bottom: 55px;
   }
 }
 @media (min-width: 768px) {
   .header {
     background-image: url("../img/back-tablet.png");
+    padding-bottom: 105px;
   }
 }
 @media (min-width: 1200px) {
   .header {
     background-image: url("../img/back-desktop.png");
+    padding-bottom: 50px;
   }
 }
 .header__company {
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 0;
 }
-.header a {
+@media (min-width: 320px) {
+  .header__company {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__company {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+}
+.header__phone {
   color: #fff;
+  font-weight: 700;
+  margin-left: 45px;
+}
+@media (min-width: 768px) {
+  .header__phone {
+    margin-left: 228px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__phone {
+    margin-left: 400px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 320px) {
+  .header__company-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .header__company-container {
+    padding-top: 30px;
+  }
+}
+.header__city {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 320px) {
+  .header__city {
+    margin-left: 260px;
+    margin-bottom: 0;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .header__city {
+    font-size: 20px;
+    margin-left: 270px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__city {
+    margin-left: 480px;
+    font-size: 25px;
+    margin-top: 90px;
+  }
+}
+@media (min-width: 320px) {
+  .header__fitness-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 131px 200px;
+    grid-template-columns: 131px 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__fitness-container {
+    -ms-grid-columns: 180px 380px;
+    grid-template-columns: 180px 380px;
+  }
+}
+@media (min-width: 320px) {
+  .header__text {
+    white-space: nowrap;
+    text-align: end;
+    font-size: 14px;
+    margin-top: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .header__text {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__text {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 320px) {
+  .header__title {
+    text-align: right;
+    font-size: 42px;
+    line-height: 50px;
+    margin-right: 20px;
+    line-height: 70px;
+    font-weight: 900;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 48px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 82px;
+    line-height: 120px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+  }
+}
+.header__buy-membership {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+@media (min-width: 320px) {
+  .header__buy-membership {
+    text-align: center;
+    border: 3px solid #fff;
+    margin: 30px 20px 0px 20px;
+    padding: 10px 0px 10px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .header__buy-membership {
+    margin: 10px 410px 0px 120px;
+    padding: 15px 0px 15px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__buy-membership {
+    margin: 20px 620px 0px 350px;
+    padding: 15px 0px 15px 0px;
+  }
+}
+@media (min-width: 768px) {
+  .header__info-container {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__info-container {
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 320px) {
+  .header__picture {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .header__picture {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__picture {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 650px;
+  }
 }
 
 /* @mixin hover-focus {
