@@ -319,28 +319,28 @@ template {
   font-weight: 400;
   font-family: "AlumniSans";
   font-display: swap;
-  src: url("/source/fonts/AlumniSans-Regular.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-Regular.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "AlumniSans";
   font-display: swap;
-  src: url("/source/fonts/AlumniSans-Bold.woff2") format("woff2");
+  src: url("../fonts/AlumniSans-Bold.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("/source/fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("/source/fonts/RobotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2");
 }
 *,
 *::before,
@@ -1242,46 +1242,46 @@ button,
 @media (min-width: 768px) {
   .header {
     background-image: url("../img/back-tablet.png");
-    padding-bottom: 105px;
   }
 }
 @media (min-width: 1200px) {
   .header {
     background-image: url("../img/back-desktop.png");
-    padding-bottom: 50px;
+    padding-bottom: 57px;
   }
 }
 .header__company {
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 0;
+  margin-left: 30px;
 }
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   .header__company {
-    font-size: 16px;
+    margin-left: 30px;
   }
 }
 @media (min-width: 1200px) {
   .header__company {
-    font-size: 20px;
-    margin-left: 50px;
+    font-size: 38px;
   }
 }
 .header__phone {
   color: #fff;
   font-weight: 700;
   margin-left: 45px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .header__phone {
-    margin-left: 228px;
-    font-size: 18px;
+    margin-right: 25px;
   }
 }
 @media (min-width: 1200px) {
   .header__phone {
-    margin-left: 400px;
-    font-size: 20px;
+    font-size: 26px;
+    margin-right: 30px;
   }
 }
 @media (min-width: 320px) {
@@ -1289,51 +1289,44 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 20px;
-    padding-left: 10px;
   }
 }
 @media (min-width: 768px) {
   .header__company-container {
-    padding-top: 30px;
+    padding-bottom: 18px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .header__city {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 28px;
 }
 @media (min-width: 320px) {
   .header__city {
-    margin-left: 260px;
+    padding-top: 30px;
+    margin-left: 240px;
     margin-bottom: 0;
-    margin-top: 70px;
   }
 }
 @media (min-width: 768px) {
   .header__city {
-    font-size: 20px;
-    margin-left: 270px;
+    margin-left: 290px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 1200px) {
   .header__city {
-    margin-left: 480px;
-    font-size: 25px;
-    margin-top: 90px;
+    margin-left: 380px;
   }
 }
 @media (min-width: 320px) {
   .header__fitness-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 131px 200px;
-    grid-template-columns: 131px 200px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__fitness-container {
-    -ms-grid-columns: 180px 380px;
-    grid-template-columns: 180px 380px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media (min-width: 320px) {
@@ -1342,47 +1335,48 @@ button,
     text-align: end;
     font-size: 14px;
     margin-top: 90px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 768px) {
   .header__text {
-    font-size: 14px;
+    padding-left: 40px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 1200px) {
   .header__text {
-    margin-top: 120px;
+    padding-left: 80px;
   }
 }
 @media (min-width: 320px) {
   .header__title {
     text-align: right;
-    font-size: 42px;
+    font-size: 72px;
     line-height: 50px;
     margin-right: 20px;
     line-height: 70px;
     font-weight: 900;
     margin-top: 20px;
+    margin-right: 30px;
   }
 }
 @media (min-width: 768px) {
   .header__title {
-    font-size: 48px;
-    margin-right: 0;
+    margin-right: 420px;
   }
 }
 @media (min-width: 1200px) {
   .header__title {
-    font-size: 82px;
-    line-height: 120px;
-    margin-top: 0px;
-    margin-bottom: 7px;
+    font-size: 92px;
+    padding-right: 350px;
+    line-height: 90px;
   }
 }
 .header__buy-membership {
   color: #fff;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 @media (min-width: 320px) {
@@ -1395,25 +1389,14 @@ button,
 }
 @media (min-width: 768px) {
   .header__buy-membership {
-    margin: 10px 410px 0px 120px;
+    margin: 0px 420px 50px 180px;
     padding: 15px 0px 15px 0px;
   }
 }
 @media (min-width: 1200px) {
   .header__buy-membership {
-    margin: 20px 620px 0px 350px;
+    margin: 0px 770px 0px 200px;
     padding: 15px 0px 15px 0px;
-  }
-}
-@media (min-width: 768px) {
-  .header__info-container {
-    margin-left: 30px;
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__info-container {
-    margin-bottom: 0px;
   }
 }
 @media (min-width: 320px) {
@@ -1433,8 +1416,9 @@ button,
   .header__picture {
     display: block;
     position: absolute;
-    top: 120px;
-    left: 650px;
+    left: 480px;
+    top: 40px;
+    width: 460px;
   }
 }
 
