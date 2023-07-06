@@ -1247,7 +1247,7 @@ button,
 @media (min-width: 1200px) {
   .header {
     background-image: url("../img/back-desktop.png");
-    padding-bottom: 57px;
+    padding-bottom: 56px;
   }
 }
 .header__company {
@@ -1419,6 +1419,129 @@ button,
     left: 480px;
     top: 40px;
     width: 460px;
+  }
+}
+
+.footer {
+  background-color: #030A1A;
+  color: #fff;
+}
+@media (min-width: 320px) {
+  .footer {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+.footer__list {
+  font-family: "RobotoCondensed";
+  margin: 0;
+}
+@media (min-width: 320px) {
+  .footer__list {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 100px;
+    grid-template-columns: 100px 100px;
+    -ms-grid-rows: 40px 40px;
+    grid-template-rows: 40px 40px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__list {
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__list {
+    padding-top: 30px;
+  }
+}
+.footer__list-item {
+  cursor: pointer;
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .footer__list-item {
+    margin-right: -10px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__list-item {
+    font-size: 14px;
+  }
+}
+@media (min-width: 320px) {
+  .footer__logos-container {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .footer__logos-container {
+    margin-left: 50px;
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__logos-container {
+    margin-left: 230px;
+    margin-top: 28px;
+  }
+}
+.footer__social-logo {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.company {
+  font-family: "AlumniSans";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (min-width: 320px) {
+  .company {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .company {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .company {
+    font-size: 26px;
+    margin-left: 50px;
+    margin-right: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-section:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
   }
 }
 
