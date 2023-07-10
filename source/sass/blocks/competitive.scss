@@ -1,0 +1,163 @@
+.competitive{
+  position: relative;
+  font-family: "RobotoCondensed";
+  color: #fff;
+  background-color: #fff;
+  @media (min-width: $mobile-width) {
+    margin: 0px 15px 0px 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 45px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+  &__wrapper{
+    display: flex;
+    @media (min-width: $desktop-width) {
+    }
+  }
+  &__secondary-wrapper{
+    margin-top: 30px;
+    @media (min-width: $desktop-width) {
+      padding-left: 100px;
+      margin-top: 60px;
+    }
+  }
+  &__info-container{
+    background-color: #ED0233;
+    @media (min-width: $mobile-width) {
+      padding-bottom: 50px;
+      width: 290px;
+      height: 292px;
+    }
+    @media (min-width: $desktop-width) {
+      height: 430px;
+      width: 500px;
+      padding-bottom: 0px;
+      padding-top: 20px;
+  }
+  }
+  &__title{
+    font-family: "AlumniSans";
+    text-transform: uppercase;
+    @media (min-width: $mobile-width) {
+      font-size: 48px;
+      line-height: 55px;
+      width: 130px;
+      margin-left: 45px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 82px;
+      line-height: 85px;
+    }
+  }
+  &__data{
+    @media (min-width: $mobile-width) {
+      font-size: 12px;
+      width: 45px;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 5px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      width: 63px;
+      padding-bottom: 5px;
+    }
+  }
+  &__data-number{
+    @media (min-width: $mobile-width) {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 40px;
+      margin-top: 15px;
+    }
+  }
+  &__month{
+    @media (min-width: $mobile-width) {
+      font-size: 10px;
+      margin: 0;
+      position: absolute;
+      top: 148px;
+      left: 190px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+      top: 215px;
+      left: 300px;
+    }
+  }
+  &__year{
+    @media (min-width: $mobile-width) {
+      font-size: 10px;
+      margin: 0;
+      position: absolute;
+      top: 160px;
+      left: 190px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 14px;
+      top: 235px;
+      left: 300px;
+    }
+  }
+  &__time{
+    @media (min-width: $mobile-width) {
+      font-size: 12px;
+      width: 55px;
+      border-bottom: 2px solid #fff;
+      margin-top: 5px;
+      margin-bottom: 3px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      margin-top: 30px;
+      width: 90px;
+      padding-bottom: 5px;
+    }
+  }
+  &__time-number{
+    @media (min-width: $mobile-width) {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 40px;
+      margin-top: 15px;
+    }
+  }
+  &__text{
+    @media (min-width: $mobile-width) {
+      position: absolute;
+      top: 235px;
+      left: 50px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      top: 360px;
+  }
+}
+  &__application{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: 2px solid #fff;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    @media (min-width: $mobile-width) {
+      font-size: 12px;
+      margin: 20px 60px 0px 50px;
+    }
+  }
+
+}
