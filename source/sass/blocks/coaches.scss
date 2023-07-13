@@ -1,0 +1,170 @@
+.coaches {
+  font-family: "RobotoCondensed";
+  position: relative;
+  height: 400px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 420px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__title {
+    font-family: "AlumniSans";
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+      font-size: 54px;
+      margin-left: 35px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__coach-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #102654;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+
+    @media (min-width: $mobile-width) {
+      width: 226px;
+      height: 255px;
+      top: 60px;
+      left: 50px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 292px;
+      top: 63px;
+      left: 70px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 226px;
+      height: 260px;
+      top: 80px;
+      left: 40px;
+    }
+  }
+
+  &__name {
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      font-weight: 700px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      margin-top: 0;
+    }
+  }
+
+  &__achives-item {
+    @media (min-width: $mobile-width) {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__coach {
+    width: 226px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 226px;
+    }
+  }
+
+  &__coach-name {
+    color: #fff;
+    position: absolute;
+
+    @media (min-width: $mobile-width) {
+      top: 190px;
+      font-size: 18px;
+      margin-left: 60px;
+    }
+    @media (min-width: $tablet-width) {
+      top: 220px;
+      margin-left: 80px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 190px;
+      margin-left: 60px;
+    }
+  }
+
+  &__pashkov-name {
+    color: #fff;
+    position: absolute;
+
+    @media (min-width: $mobile-width) {
+      top: 190px;
+      font-size: 18px;
+      margin-left: 40px;
+    }
+    @media (min-width: $tablet-width) {
+      top: 220px;
+      margin-left: 60px;
+    }
+    @media (min-width: $desktop-width) {
+      top: 190px;
+      margin-left: 40px;
+    }
+  }
+}
+
+.swiper-button-prev::after {
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+  }
+}
+
+.swiper-button-next::after {
+  color: #AFAFAF;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+  }
+}
+
+.hidden {
+  display: none;
+}

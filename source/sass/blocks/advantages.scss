@@ -1,0 +1,192 @@
+.advantages {
+  font-family: "RobotoCondensed";
+  background-color: #F8F9FC;
+  color: #102654;
+  position: relative;
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+&__item-wrapper{
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    margin-bottom: 80px;
+    padding-left: 0px;
+  }
+}
+  &__title {
+    font-family: "AlumniSans";
+    @media (min-width: $mobile-width) {
+      font-size: 32px;
+      margin-bottom: 60px;
+      margin-top: 80px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-bottom: 70px;
+      margin-top: 100px;
+    }
+  }
+
+  &__advantage-container{
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__number {
+
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+
+    @media (min-width: $mobile-width) {
+      font-size: 58px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+  }
+
+  &__number-text{
+    color: #2E35AC;
+    margin: 0px;
+    @media (min-width: $mobile-width) {
+      font-size: 14px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+    }
+  }
+
+  &__sub-title{
+    margin-bottom: 0px;
+    @media (min-width: $mobile-width) {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    @media (min-width: $tablet-width) {
+      padding-left: 30px;
+      margin-top: 0;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 22px;
+    }
+  }
+
+  &__text{
+    margin-bottom: 40px;
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      padding: 0px 30px 0px 30px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 0px 0px 0px 30px;
+    }
+  }
+
+  &__blue-container {
+    color: #fff;
+    background-color: #1C3374;
+    text-align: center;
+
+    @media (min-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 60%;
+    }
+    @media (min-width: $desktop-width) {
+      width: 20%;
+      height: 310px;
+      position: absolute;
+      top: 180px;
+    }
+  }
+  &__info-container{
+    @media (min-width: $tablet-width) {
+      text-align: start;
+    }
+  }
+  &__advantage-container{
+    @media (min-width: $tablet-width) {
+      margin-left: 40px;
+      padding-left: 20px;
+    }
+    @media (min-width: $desktop-width) {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+}
+
+.blue-number{
+  color: #fff;
+  @media (min-width: $mobile-width) {
+  font-size: 74px;
+  padding-top: 70px;
+}
+}
+
+.blue-sub-title{
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    padding: 0;
+  }
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+}
+
+.blue-text{
+  padding: 0px 70px 0px 70px;
+  @media (min-width: $tablet-width) {
+    padding: 0px 140px 0px 140px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0px 30px 0px 30px;
+  }
+}
+
+.second-wrapper{
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 180px;
+  }
+}
+
+.advantage-second-text{
+  @media (min-width: $desktop-width) {
+    width: 230px;
+  }
+}
+
+.effect-item{
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #D10A42;
+  }
+}
