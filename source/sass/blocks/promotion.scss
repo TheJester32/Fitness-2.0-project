@@ -1,0 +1,197 @@
+.promotion{
+  font-family: "RobotoCondensed";
+  color: #1C3374;
+  text-align: center;
+  @media (min-width: $mobile-width) {
+    padding-bottom: 80px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
+  &__title{
+    font-family: "AlumniSans";
+    @media (min-width: $mobile-width) {
+      padding: 50px 0px 20px 0px;
+      font-size: 32px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      padding: 70px 0px 20px 0px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+    }
+  }
+  &__year-container{
+    background-color: #ED0233;
+    color: #fff;
+    @media (min-width: $mobile-width) {
+      padding-bottom: 30px;
+      margin: 0px 20px 0px 20px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 35%;
+      margin-right: 0;
+      margin-left: 50px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 75%;
+      height: 88.3%;
+    }
+  }
+  &__year{
+    @media (min-width: $mobile-width) {
+      font-size: 28px;
+      font-weight: bolder;
+      padding-top: 50px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-left: 40px;
+      padding-top: 20px;
+    }
+  }
+  &__price{
+    @media (min-width: $mobile-width) {
+      font-size: 70px;
+      font-weight: bolder;
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-left: 40px;
+    }
+  }
+  &__text{
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      padding: 0px 55px 0px 55px;
+      line-height: 28px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding: 0px 70px 0px 20px;
+    }
+  }
+  &__first-text{
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      padding: 0px 55px 0px 55px;
+      line-height: 28px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding: 0px 45px 0px 45px;
+      line-height: 25px;
+    }
+  }
+  &__promotion-link{
+      cursor: pointer;
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+      font-weight: bolder;
+      @media (min-width: $mobile-width) {
+        font-size: 14px;
+        margin-top: 30px;
+        width: 72px;
+        margin-left: 100px;
+      }
+      @media (min-width: $tablet-width) {
+        margin-left: 40px;
+        margin-top: 175px;
+      }
+      @media (min-width: $desktop-width) {
+        margin-top: 165px;
+      }
+  }
+  &__link{
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1C3374;
+    font-weight: bolder;
+    @media (min-width: $mobile-width) {
+      font-size: 14px;
+      margin-top: 30px;
+      width: 72px;
+      margin-left: 95px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-left: 20px;
+    }
+  }
+   &__picture-container{
+    @media (min-width: $mobile-width) {
+      margin-left: 20px;
+      width: 280px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 399px;
+      margin-left: 0;
+    }
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      margin-left: 0;
+    }
+   }
+   &__item-comtainer{
+  border: 8px solid rgb(209, 10, 66);
+  border-image: linear-gradient(to bottom, rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159), rgb(0, 53, 159));
+  border-image-slice: 1;
+  padding-bottom: 20px;
+  @media (min-width: $mobile-width) {
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 280px;
+  }
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 520px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 62px;
+  }
+   }
+   &__sub-title{
+    @media (min-width: $mobile-width) {
+      font-size: 26px;
+      margin-bottom: 0px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-left: 20px;
+    }
+   }
+   &__items-wrapper{
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin-left: 30px;
+    }
+      @media (min-width: $desktop-width) {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+   }
+   &__first-items-wrapper{
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+   }
+   &__wrapper{
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+   }
+   &__both-items-wrapper{
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+    }
+   }
+}
