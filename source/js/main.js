@@ -5,6 +5,7 @@ import './gym.js';
 import './membership.js';
 import './coaches-swiper.js';
 import './coahes.js';
+import './faq.js';
 
 // ---------------------------------
 
