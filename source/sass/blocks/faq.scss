@@ -1,0 +1,172 @@
+.faq{
+  font-family: "RobotoCondensed";
+  color: #102654;
+  background-color: #F8F9FC;
+  @media (min-width: $mobile-width) {
+    padding-bottom: 50px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
+  }
+  &__title{
+    font-family: "AlumniSans";
+    text-align: center;
+    @media (min-width: $mobile-width) {
+      font-size: 32px;
+      padding-top: 80px;
+      padding-bottom: 20px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+      text-align: start;
+      margin-left: 70px;
+      padding-bottom: 0px;
+      padding-top: 120px;
+    }
+  }
+  &__upper-list{
+    list-style-type: none;
+    @media (min-width: $mobile-width) {
+      width: 300px;
+      display: grid;
+      grid-template-columns: 140px 140px;
+      gap: 15px;
+      padding-left: 10px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: $tablet-width) {
+      display: flex;
+      width: 678px;
+      padding-left: 70px;
+      margin-bottom: 40px;
+    }
+    @media (min-width: $desktop-width) {
+      flex-direction: column;
+      width: 260px;
+    }
+  }
+  &__upper-item{
+    cursor: pointer;
+    font-weight: 700;
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      width: 141px;
+      height: 50px;
+      text-align: center;
+      padding-top: 10px;
+      border: 1px solid #b1b1b1;
+    }
+    @media (min-width: $desktop-width) {
+      width: 260px;
+      font-size: 18px;
+    }
+  }
+  &__questions{
+    list-style-type: none;
+    @media (min-width: $mobile-width) {
+    width: 295px;
+    border-top: 1px solid #b1b1b1;
+    padding-left: 0px;
+    margin-left: 10px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 80%;
+      margin-left: 70px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 60%;
+      margin-left: 100px;
+    }
+  }
+  &__questions-item{
+    font-weight: bolder;
+    position: relative;
+    @media (min-width: $mobile-width) {
+      margin-top: 20px;
+      font-size: 18px;
+      padding-right: 80px;
+      padding-bottom: 10px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  &__questions-answer{
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      padding-right: 20px;
+      margin-top: 0;
+    }
+    @media (min-width: $tablet-width) {
+      padding-right: 120px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.default-option-item{
+  background: linear-gradient(to right, rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+  color: #fff;
+  border: 0px;
+  transition: all 1s ease-out;
+}
+
+.hidden{
+  display: none;
+}
+
+.close{
+  cursor: pointer;
+  position: absolute;
+  @media (min-width: $mobile-width) {
+    top: 0px;
+    left: 260px;
+  }
+  @media (min-width: $tablet-width) {
+    left: 580px;
+    top: -10px;
+  }
+  @media (min-width: $desktop-width) {
+    left: 685px;
+    top: -5px;
+  }
+}
+
+.open{
+  cursor: pointer;
+  position: absolute;
+  @media (min-width: $mobile-width) {
+    top: 0px;
+    left: 260px;
+  }
+  @media (min-width: $tablet-width) {
+    left: 580px;
+    top: -10px;
+  }
+  @media (min-width: $desktop-width) {
+    left: 685px;
+    top: -5px;
+  }
+}
+
+.faq__question-container{
+  border-bottom: 1px solid #1C3374;
+  padding-bottom: 10px;
+}
+
+.faq__wrapper{
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

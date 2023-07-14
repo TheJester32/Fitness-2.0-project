@@ -43,6 +43,18 @@
             fill="#030A1A" />
         </g>
       </symbol>
+      <symbol id="open" viewBox="0 0 32 32">
+        <g>
+          <circle cx="16" cy="16" r="15.5" stroke="#1C3374" fill="white"/>
+          <path d="M16 10V16M16 22V16M16 16H22M16 16H10" stroke="#1C3374" />
+        </g>
+      </symbol>
+      <symbol id="close" viewBox="0 0 32 32">
+        <g>
+          <circle cx="16" cy="16" r="15.5" fill="#1C3374" stroke="#1C3374"/>
+          <path d="M22 16H16H10" stroke="white"/>
+        </g>
+      </symbol>
     </svg>
     <header class="header">
       <div class="header__company-container">
@@ -250,21 +262,21 @@
             </div>
             <div class="swiper-slide">
               <div class="coaches__picture-container">
-                  <picture class="coaches__coach">
-                    <source media="(min-width: 328px)" srcset="img/pashkov.jpg 1x, img/pashkov2x.jpg 2x">
-                    <img class="pashkov-card" src="img/pashkov.jpg" alt="Александр Пашков">
-                    <p class="coaches__pashkov-name">Александр Пашков</p>
+                <picture class="coaches__coach">
+                  <source media="(min-width: 328px)" srcset="img/pashkov.jpg 1x, img/pashkov2x.jpg 2x">
+                  <img class="pashkov-card" src="img/pashkov.jpg" alt="Александр Пашков">
+                  <p class="coaches__pashkov-name">Александр Пашков</p>
                 </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide">
                 <div class="coaches__picture-container">
-                    <picture class="coaches__coach">
-                  <source media="(min-width: 328px)" srcset="img/ketova.jpg 1x, img/ketova2x.jpg 2x">
-                  <img src="img/ketova.jpg" alt="Мария Кетова">
-                  <p class="coaches__coach-name">Мария Кетова</p>
-                </picture>
+                  <picture class="coaches__coach">
+                    <source media="(min-width: 328px)" srcset="img/ketova.jpg 1x, img/ketova2x.jpg 2x">
+                    <img src="img/ketova.jpg" alt="Мария Кетова">
+                    <p class="coaches__coach-name">Мария Кетова</p>
+                  </picture>
                 </div>
               </div>
             </div>
@@ -274,98 +286,305 @@
         </div>
         <div class="coaches__coach-container pashkov">
           <h3 class="coaches__name">Александр Пашков</h2>
-          <p class="coaches__text">Crossfit</p>
-          <ul class="coaches__achives pashkov">
-            <li class="coaches__achives-item">Certified Level 3 Trainer</li>
-            <li class="coaches__achives-item">Победитель чемпионата России по CrossFit</li>
-            <li class="coaches__achives-item">Опыт — 6 лет</li>
-          </ul>
+            <p class="coaches__text">Crossfit</p>
+            <ul class="coaches__achives pashkov">
+              <li class="coaches__achives-item">Certified Level 3 Trainer</li>
+              <li class="coaches__achives-item">Победитель чемпионата России по CrossFit</li>
+              <li class="coaches__achives-item">Опыт — 6 лет</li>
+            </ul>
         </div>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Наши приемущества</h2>
         <div class="advantages__advantage-container">
           <div class="advantages__item-wrapper">
-          <div class="advantages__number-container effect-item">
-        <p class="advantages__number">900</p>
-        <p class="advantages__number-text">кв/м</p>
-      </div>
-      <div class="advantages__info-container effect-item">
-        <h3 class="advantages__sub-title">Площадь</h3>
-        <p class="advantages__text advantage-second-text">Занимайтесь без очередей и толпучки</p>
-      </div>
-    </div>
-    <div class="advantages__item-wrapper second-wrapper">
-        <div class="advantages__number-container effect-item">
-        <p class="advantages__number">70</p>
-        <p class="advantages__number-text">машин</p>
-      </div>
-      <div class="advantages__info-container effect-item">
-        <h3 class="advantages__sub-title">Собственная парковка</h3>
-        <p class="advantages__text">Вы всегда найдете место для своей машины на нашей парковке</p>
-      </div>
-      </div>
-    </div>
+            <div class="advantages__number-container effect-item">
+              <p class="advantages__number">900</p>
+              <p class="advantages__number-text">кв/м</p>
+            </div>
+            <div class="advantages__info-container effect-item">
+              <h3 class="advantages__sub-title">Площадь</h3>
+              <p class="advantages__text advantage-second-text">Занимайтесь без очередей и толпучки</p>
+            </div>
+          </div>
+          <div class="advantages__item-wrapper second-wrapper">
+            <div class="advantages__number-container effect-item">
+              <p class="advantages__number">70</p>
+              <p class="advantages__number-text">машин</p>
+            </div>
+            <div class="advantages__info-container effect-item">
+              <h3 class="advantages__sub-title">Собственная парковка</h3>
+              <p class="advantages__text">Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
+          </div>
+        </div>
         <div class="advantages__blue-container">
-        <p class="advantages__number blue-number">100</p>
-        <h3 class="advantages__sub-title blue-sub-title">Тренажеров</h3>
-        <p class="advantages__text blue-text">Современные тренажеры на все группы мышц</p>
+          <p class="advantages__number blue-number">100</p>
+          <h3 class="advantages__sub-title blue-sub-title">Тренажеров</h3>
+          <p class="advantages__text blue-text">Современные тренажеры на все группы мышц</p>
         </div>
         <div class="advantages__advantage-container">
           <div class="advantages__item-wrapper">
-          <div class="advantages__number-container">
-        <p class="advantages__number">350</p>
-        <p class="advantages__number-text">мест</p>
-      </div>
-      <div class="advantages__info-container">
-        <h3 class="advantages__sub-title">Комфорт</h3>
-        <p class="advantages__text advantage-second-text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-      </div>
-    </div>
-    <div class="advantages__item-wrapper second-wrapper">
-        <div class="advantages__number-container">
-        <p class="advantages__number">5+</p>
-        <p class="advantages__number-text">лет</p>
-      </div>
-      <div class="advantages__info-container">
-        <h3 class="advantages__sub-title">Тренерский опыт</h3>
-        <p class="advantages__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-      </div>
-    </div>
-      </div>
+            <div class="advantages__number-container">
+              <p class="advantages__number">350</p>
+              <p class="advantages__number-text">мест</p>
+            </div>
+            <div class="advantages__info-container">
+              <h3 class="advantages__sub-title">Комфорт</h3>
+              <p class="advantages__text advantage-second-text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+            </div>
+          </div>
+          <div class="advantages__item-wrapper second-wrapper">
+            <div class="advantages__number-container">
+              <p class="advantages__number">5+</p>
+              <p class="advantages__number-text">лет</p>
+            </div>
+            <div class="advantages__info-container">
+              <h3 class="advantages__sub-title">Тренерский опыт</h3>
+              <p class="advantages__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="promotion">
         <h2 class="promotion__title">Акции</h2>
         <div class="promotion__wrapper">
-        <div class="promotion__first-items-wrapper">
-        <div class="promotion__year-container">
-        <p class="promotion__year">Год</p>
-        <p class="promotion__price">4999</p>
-        <p class="promotion__first-text">Безлимитный абонемент в тренажерный зал</p>
-        <p class="promotion__promotion-link">Подробнее</p>
+          <div class="promotion__first-items-wrapper">
+            <div class="promotion__year-container">
+              <p class="promotion__year">Год</p>
+              <p class="promotion__price">4999</p>
+              <p class="promotion__first-text">Безлимитный абонемент в тренажерный зал</p>
+              <p class="promotion__promotion-link">Подробнее</p>
+            </div>
+            <div class="promotion__picture-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/woman-desktop.jpg 1x, img/woman-desktop2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/woman-tablet.jpg 1x, img/woman-tablet2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="img/woman-mobile.jpg 1x, img/woman-mobile2x.jpg 2x">
+                <img class="promotion__picture" src="img/woman-mobile.jpg" alt="Спортсмен.">
+              </picture>
+            </div>
+          </div>
+          <div class="promotion__items-wrapper">
+            <div class="promotion__item-comtainer">
+              <h3 class="promotion__sub-title">Месяц бесплатно</h3>
+              <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
+              <p class="promotion__link">Подробнее</p>
+            </div>
+            <div class="promotion__item-comtainer">
+              <h3 class="promotion__sub-title">Скидка 20%</h3>
+              <p class="promotion__text">Корпоративный фитнес с командой</p>
+              <p class="promotion__link">Подробнее</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <div class="faq__wrapper">
+        <ul class="faq__upper-list">
+          <li class="faq__upper-item first-section">Центр</li>
+          <li class="faq__upper-item second-section">Абонемент</li>
+          <li class="faq__upper-item default-section default-option-item third-section">Услуги</li>
+          <li class="faq__upper-item fourth-section">Правила</li>
+        </ul>
+        <ul class="faq__questions services">
+          <div class="faq__question-container">
+          <li class="faq__questions-item">Предлагает ли клуб услуги по консультированию по вопросам питания?
+            <svg class="faq__services-first-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__services-first-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer services-first-answer hidden">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
+            Специалист уточнит ваши данные, цели
+            и предложит программу питания.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Проводятся ли в клубе какие-либо мероприятия или соревнования?
+            <svg class="faq__services-second-close close hidden" width="32px" height="32px">
+            <use href="#close"></use>
+          </svg>
+          <svg class="faq__services-second-open open" width="32px" height="32px">
+            <use href="#open"></use>
+          </svg>
+        </li>
+          <p class="faq__questions-answer services-second-answer hidden">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист
+            уточнит ваши данные, цели
+            и предложит программу питания.
+          </p>
+        </div>
+            <div class="faq__question-container">
+          <li class="faq__questions-item">Можно ли приобрести в центре спортивное питание?
+            <svg class="faq__services-third-close close hidden" width="32px" height="32px">
+            <use href="#close"></use>
+          </svg>
+          <svg class="faq__services-third-open open" width="32px" height="32px">
+            <use href="#open"></use>
+          </svg></li>
+          <p class="faq__questions-answer services-third-answer hidden">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист
+            уточнит ваши данные, цели
+            и предложит программу питания.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Есть ли в центре детская комната?
+            <svg class="faq__services-fourth-close close hidden" width="32px" height="32px">
+            <use href="#close"></use>
+          </svg>
+          <svg class="faq__services-fourth-open open" width="32px" height="32px">
+            <use href="#open"></use>
+          </svg></li>
+          <p class="faq__questions-answer services-fourth-answer hidden">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист
+            уточнит ваши данные, цели
+            и предложит программу питания.
+          </p>
+        </div>
+        </ul>
+        <ul class="faq__questions center hidden">
+          <div class="faq__question-container">
+          <li class="faq__questions-item">Как стать членом фитнес-центра?
+            <svg class="faq__center-first-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__center-first-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer center-first-answer hidden">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
+            договор. При покупке абонемента онлайн,
+            анкета также заполняется онлайн и договор придет вам на почту.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Где можно посмотреть расписание?
+            <svg class="faq__center-second-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__center-second-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer center-second-answer hidden">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
+            договор. При покупке абонемента онлайн,
+            анкета также заполняется онлайн и договор придет вам на почту.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Есть кулеры в центре? Предоставляются полотенца?
+            <svg class="faq__center-third-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__center-third-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer center-third-answer hidden">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
+            договор. При покупке абонемента онлайн,
+            анкета также заполняется онлайн и договор придет вам на почту.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Cколько тренеров работает в клубе и какова их квалификация?
+            <svg class="faq__center-fourth-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__center-fourth-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer center-fourth-answer hidden">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать
+            договор. При покупке абонемента онлайн,
+            анкета также заполняется онлайн и договор придет вам на почту.
+          </p>
+        </div>
+        </ul>
+        <ul class="faq__questions sub hidden">
+          <div class="faq__question-container">
+          <li class="faq__questions-item">Занятия с тренером входят в абонемент?
+            <svg class="faq__sub-first-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__sub-first-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer sub-first-answer hidden">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+            В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+            тренажеру или технике выполнения упражнения.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Можно ли заморозить абонемент?
+            <svg class="faq__sub-second-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__sub-second-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer sub-second-answer hidden">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+            В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+            тренажеру или технике выполнения упражнения.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+            <svg class="faq__sub-third-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__sub-third-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer sub-third-answer hidden">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+            В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+            тренажеру или технике выполнения упражнения.
+          </p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Что такое семейный доступ и доступ для друзей?
+            <svg class="faq__sub-fourth-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__sub-fourth-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer sub-fourth-answer hidden">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+            В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+            тренажеру или технике выполнения упражнения.
+          </p>
+        </div>
+        </ul>
+        <ul class="faq__questions rules hidden">
+          <div class="faq__question-container">
+          <li class="faq__questions-item">Первое правила фитнес-клуба.
+            <svg class="faq__rules-first-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__rules-first-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer rules-first-answer hidden">Не упоминать о фитнес-клубе</p>
+        </div>
+        <div class="faq__question-container">
+          <li class="faq__questions-item">Второе правило фитнес-клуба.
+            <svg class="faq__rules-second-close close hidden" width="32px" height="32px">
+              <use href="#close"></use>
+            </svg>
+            <svg class="faq__rules-second-open open" width="32px" height="32px">
+              <use href="#open"></use>
+            </svg>
+          </li>
+          <p class="faq__questions-answer rules-second-answer hidden">Не упоминать о фитнес-клубе!</p>
+        </div>
+        </ul>
       </div>
-      <div class="promotion__picture-container">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/woman-desktop.jpg 1x, img/woman-desktop2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/woman-tablet.jpg 1x, img/woman-tablet2x.jpg 2x">
-          <source media="(min-width: 320px)" srcset="img/woman-mobile.jpg 1x, img/woman-mobile2x.jpg 2x">
-          <img class="promotion__picture" src="img/woman-mobile.jpg" alt="Спортсмен.">
-        </picture>
-      </div>
-      </div>
-      <div class="promotion__items-wrapper">
-      <div class="promotion__item-comtainer">
-        <h3 class="promotion__sub-title">Месяц бесплатно</h3>
-        <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
-        <p class="promotion__link">Подробнее</p>
-      </div>
-      <div class="promotion__item-comtainer">
-        <h3 class="promotion__sub-title">Скидка 20%</h3>
-        <p class="promotion__text">Корпоративный фитнес с командой</p>
-        <p class="promotion__link">Подробнее</p>
-      </div>
-    </div>
-    </div>
       </section>
     </main>
     <footer class="footer">
