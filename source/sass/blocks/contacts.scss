@@ -1,0 +1,87 @@
+.contacts {
+  font-family: "RobotoCondensed";
+  color: #102654;
+
+  @media (min-width: $mobile-width) {
+    padding-bottom: 50px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 0px;
+  }
+
+  &__title {
+    font-family: "AlumniSans";
+
+    @media (min-width: $mobile-width) {
+      font-size: 32px;
+      margin-left: 20px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      margin-left: 150px;
+      margin-bottom: 20px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 700;
+
+    @media (min-width: $mobile-width) {
+      font-size: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    @media (min-width: $mobile-width) {
+      font-size: 18px;
+      margin-top: 0px;
+      margin-left: 20px;
+    }
+  }
+
+  &__contacts-wrapper {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      margin-left: 100px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 0px;
+    }
+  }
+
+  &__contacts-container {
+    @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    }
+  }
+}
+
+.contacts-first-container {
+  @media (min-width: $tablet-width) {
+    border-right: 2px solid #74819C;
+    padding-right: 50px;
+  }
+}
+
+.contacts-container{
+  @media (min-width: $desktop-width) {
+  display: flex;
+  padding-bottom: 0;
+  }
+}

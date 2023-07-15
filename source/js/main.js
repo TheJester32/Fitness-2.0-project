@@ -7,6 +7,7 @@ import './coaches-swiper.js';
 import './coahes.js';
 import './faq.js';
 import './comments-swiper.js';
+import './form.js';
 
 // ---------------------------------
 
