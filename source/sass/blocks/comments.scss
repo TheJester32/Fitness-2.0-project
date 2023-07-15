@@ -1,0 +1,95 @@
+.comments{
+  font-family: "RobotoCondensed";
+  text-align: center;
+  @media (min-width: $mobile-width) {
+    padding-bottom: 50px;
+  }
+  @media (min-width: $tablet-width) {
+    padding-left: 9.5%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 10.5%;
+    padding-right: 13%;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  &__title{
+    font-family: "AlumniSans";
+    @media (min-width: $mobile-width) {
+      font-size: 32px;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      padding-bottom: 0px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+    }
+  }
+  &__container{
+    color: #fff;
+    background-color: #1C3374;
+    @media (min-width: $mobile-width) {
+      width: 75%;
+      margin-left: 40px;
+    }
+  }
+  &__photo{
+    @media (min-width: $mobile-width) {
+      width: 68px;
+      height: 68px;
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &__name{
+    text-align: start;
+    @media (min-width: $mobile-width) {
+      font-size: 20px;
+      padding-left: 10px;
+      padding-right: 50px;
+
+    }
+    @media (min-width: $tablet-width) {
+      padding-top: 20px;
+    }
+  }
+  &__user{
+    @media (min-width: $mobile-width) {
+      display: flex;
+      padding-top: 50px;
+      line-height: 25px;
+      margin-left: 10px;
+      padding-bottom: 10px;
+    }
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+  &__text{
+    @media (min-width: $mobile-width) {
+      font-size: 16px;
+      padding: 0px 30px 40px 30px;
+      margin-top: 0px;
+    }
+    @media (min-width: $tablet-width) {
+      text-align: start;
+      padding-left: 140px;
+      padding-right: 70px;
+    }
+  }
+}
+
+// .left-comments{
+//   @media (min-width: $tablet-width) {
+//     margin-left: 500px;
+//   }
+// }

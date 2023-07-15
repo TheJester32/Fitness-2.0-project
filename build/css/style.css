@@ -3954,6 +3954,121 @@ button,
   }
 }
 
+.comments {
+  font-family: "RobotoCondensed";
+  text-align: center;
+}
+@media (min-width: 320px) {
+  .comments {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .comments {
+    padding-left: 9.5%;
+    padding-right: 10%;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .comments {
+    padding-left: 10.5%;
+    padding-right: 13%;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+.comments__title {
+  font-family: "AlumniSans";
+}
+@media (min-width: 320px) {
+  .comments__title {
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .comments__title {
+    font-size: 42px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .comments__title {
+    font-size: 54px;
+  }
+}
+.comments__container {
+  color: #fff;
+  background-color: #1C3374;
+}
+@media (min-width: 320px) {
+  .comments__container {
+    width: 75%;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 320px) {
+  .comments__photo {
+    width: 68px;
+    height: 68px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .comments__photo {
+    width: 80px;
+    height: 80px;
+  }
+}
+.comments__name {
+  text-align: start;
+}
+@media (min-width: 320px) {
+  .comments__name {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .comments__name {
+    padding-top: 20px;
+  }
+}
+@media (min-width: 320px) {
+  .comments__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+    line-height: 25px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .comments__user {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 320px) {
+  .comments__text {
+    font-size: 16px;
+    padding: 0px 30px 40px 30px;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .comments__text {
+    text-align: start;
+    padding-left: 140px;
+    padding-right: 70px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
