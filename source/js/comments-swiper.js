@@ -3,35 +3,34 @@ import Swiper, {Navigation} from 'swiper';
 Swiper.use([Navigation]);
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-comments', {
 
   direction: 'horizontal',
   loop: true,
-
 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
   breakpoints: {
     320: {
       width: 320,
       slidesPerView: 1,
     },
     768: {
-      width: 710,
-      slidesPerView: 2,
+      centeredSlides: true,
+      width: 720,
+      slidesPerView: 1,
     },
     1200: {
-      width: 1200,
-      slidesPerView: 4,
+      centeredSlides: true,
+      width: 720,
+      slidesPerView: 1,
     },
   },
 
-  initialSlide: 2,
-
+  slidesPerGroup: 1,
+  centeredSlides: true,
 });
 
 export {swiper};
-
