@@ -1,0 +1,79 @@
+.form {
+  font-family: "RobotoCondensed";
+  background-color: #102654;
+  color: #fff;
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    height: 50%;
+  }
+  &__title{
+    font-family: "AlumniSans";
+    @media (min-width: $mobile-width) {
+      font-size: 32px;
+      margin-left: 20px;
+      padding-top: 80px;
+    }
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      margin-left: 120px;
+      margin-top: 0px;
+      padding-top: 50px;
+      margin-bottom: 10px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+      margin-left: 70px;
+    }
+  }
+  &__input{
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #102654;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    @media (min-width: $mobile-width) {
+      margin-left: 20px;
+      width: 280px;
+      margin-top: 30px;
+    }
+    @media (min-width: $tablet-width) {
+      width: 178px;
+      margin-left: 120px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 70px;
+    }
+  }
+  &__send-form{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #fff;
+    outline: none;
+    background-color: #102654;
+    border: 3px solid #fff;
+    padding: 20px 103px 20px 103px;
+    @media (min-width: $mobile-width) {
+      margin-top: 15px;
+      margin-bottom: 70px;
+      font-size: 14px;
+      margin-left: 20px;
+    }
+    @media (min-width: $tablet-width) {
+      margin-left: 120px;
+      padding: 20px 200px 20px 200px;
+      margin-bottom: 50px;
+      margin-top: 0px;
+    }
+    @media (min-width: $desktop-width) {
+      margin-left: 70px;
+      padding: 20px 175px 20px 175px;
+    }
+  }
+  &__input-container{
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
