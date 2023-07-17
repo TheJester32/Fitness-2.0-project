@@ -159,3 +159,32 @@
   }
 }
 
+.gym__play:hover{
+  display: none;
+}
+
+.gym__play-active{
+  cursor: pointer;
+  position: absolute;
+  display: none;
+
+  @media (min-width: $mobile-width) {
+    top: 738px;
+    left: 110px;
+  }
+  @media (min-width: $tablet-width) {
+    top: 595px;
+    left: 335px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 435px;
+    left: 556px;
+  }
+}
+
+
+
+.gym__play:hover + .gym__play-active,
+.gym__play-activer:hover {
+ display: block;
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="Проект, выполненный во время прохождения акселератора HTML-Academy">
   <title>SUPERGYM</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -66,9 +66,7 @@
         <p class="header__text">Тренажёрный зал <br>Групповые занятия <br>Кардио-зона</p>
         <h1 class="header__title">Фитнес центр</h1>
       </div>
-      <a href="">
-        <p class="header__buy-membership">Купить абонемент</p>
-      </a>
+        <a href="#membership"><p class="header__buy-membership">Купить абонемент</p></a>
       <picture class="header__picture">
         <source media="(min-width: 1200px)" srcset="img/superman-desktop.jpg 1x, img/superman-desktop2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/superman-tablet.jpg 1x, img/superman-tablet2x.jpg 2x">
@@ -127,11 +125,16 @@
             </linearGradient>
           </defs>
         </svg>
+        <svg class="gym__play-active" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="49" stroke="#102654" stroke-width="2"/>
+          <circle cx="50" cy="50" r="29" fill="white"/>
+          <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="#102654"/>
+          </svg>
         <iframe class="gym__video hidden" width="320" height="180" src="" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </section>
-      <section class="membership">
+      <section class="membership" id="membership">
         <div class="membership__container">
           <h2 class="membership__title">Абонементы</h2>
           <div class="membership__months-container">
@@ -146,21 +149,21 @@
             <p class="membership__option-text">12 занятий</p>
             <p class="membership__option-price-effect">5000</p>
             <p class="membership__option-price">5000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
-          <div class="membership__option-wrapper default-option">
+          <div class="membership__option-wrapper">
             <h3 class="membership__option-title">Дневной</h3>
             <p class="membership__option-text">с 8:00 до 12:00</p>
             <p class="membership__option-price-effect">1700</p>
             <p class="membership__option-price">1700 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy default-option-buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
           <div class="membership__option-wrapper">
             <h3 class="membership__option-title">Полный день</h3>
             <p class="membership__option-text">с 8:00 до 22:00</p>
             <p class="membership__option-price-effect">2700</p>
             <p class="membership__option-price">2700 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
         </div>
         <div class="membership__options-container half-card hidden">
@@ -169,21 +172,21 @@
             <p class="membership__option-text">50 занятий</p>
             <p class="membership__option-price-effect">25000</p>
             <p class="membership__option-price">25000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
           <div class="membership__option-wrapper default-option">
             <h3 class="membership__option-title">Дневной</h3>
             <p class="membership__option-text">с 8:00 до 12:00</p>
             <p class="membership__option-price-effect">10000</p>
             <p class="membership__option-price">10000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy default-option-buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
           <div class="membership__option-wrapper">
             <h3 class="membership__option-title">Полный день</h3>
             <p class="membership__option-text">с 8:00 до 22:00</p>
             <p class="membership__option-price-effect">15000</p>
             <p class="membership__option-price">15000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
         </div>
         <div class="membership__options-container year-card hidden">
@@ -192,21 +195,21 @@
             <p class="membership__option-text">100 занятий</p>
             <p class="membership__option-price-effect">50000</p>
             <p class="membership__option-price">50000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
           <div class="membership__option-wrapper default-option">
             <h3 class="membership__option-title">Дневной</h3>
             <p class="membership__option-text">с 8:00 до 12:00</p>
             <p class="membership__option-price-effect">15000</p>
             <p class="membership__option-price">15000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy default-option-buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
           <div class="membership__option-wrapper">
             <h3 class="membership__option-title">Полный день</h3>
             <p class="membership__option-text">с 8:00 до 22:00</p>
             <p class="membership__option-price-effect">25000</p>
             <p class="membership__option-price">25000 <span class="membership__ruble">₽</span></p>
-            <p class="membership__buy">Купить абонемент</p>
+            <a href="#"><p class="membership__buy">Купить абонемент</p></a>
           </div>
         </div>
         <img class="membership__weights" src="img/weights.png">
@@ -229,7 +232,7 @@
             </div>
           </div>
           <p class="competitive__text">Ежегодные соревнования по CrossFit</p>
-          <p class="competitive__application">Заполнить заявку</p>
+          <a class="competitive__application-link" href="#"><p class="competitive__application">Заполнить заявку</p></a>
         </div>
         <picture>
           <source media="(min-width: 1200px)" srcset="img/man-desktop.jpg 1x, img/man-desktop2x.jpg 2x">
@@ -250,6 +253,15 @@
                   <p class="coaches__coach-name">Анна Павлова</p>
                 </picture>
               </div>
+              <div class="coaches__coach-container">
+                <h3 class="coaches__name">Анна Павлова</h2>
+                  <p class="coaches__text">Crossfit</p>
+                  <ul class="coaches__achives pashkov">
+                    <li class="coaches__achives-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__achives-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__achives-item">Опыт — 8 лет</li>
+                  </ul>
+              </div>
             </div>
             <div class="swiper-slide">
               <div class="coaches__picture-container">
@@ -258,6 +270,15 @@
                   <img src="img/lavrov.jpg" alt="Алексей Лавров">
                   <p class="coaches__coach-name">Алексей Лавров</p>
                 </picture>
+              </div>
+              <div class="coaches__coach-container">
+                <h3 class="coaches__name">Алексей Лавров</h2>
+                  <p class="coaches__text">Crossfit</p>
+                  <ul class="coaches__achives pashkov">
+                    <li class="coaches__achives-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__achives-item">Призёр чемпионата России по CrossFit</li>
+                    <li class="coaches__achives-item">Опыт — 5 лет</li>
+                  </ul>
               </div>
             </div>
             <div class="swiper-slide">
@@ -268,8 +289,16 @@
                   <p class="coaches__pashkov-name">Александр Пашков</p>
                 </picture>
               </div>
+              <div class="coaches__coach-container">
+                <h3 class="coaches__name">Александр Пашков</h2>
+                  <p class="coaches__text">Crossfit</p>
+                  <ul class="coaches__achives pashkov">
+                    <li class="coaches__achives-item">Certified Level 3 Trainer</li>
+                    <li class="coaches__achives-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="coaches__achives-item">Опыт — 6 лет</li>
+                  </ul>
+              </div>
             </div>
-            <div class="swiper-slide">
               <div class="swiper-slide">
                 <div class="coaches__picture-container">
                   <picture class="coaches__coach">
@@ -278,20 +307,19 @@
                     <p class="coaches__coach-name">Мария Кетова</p>
                   </picture>
                 </div>
+                <div class="coaches__coach-container">
+                  <h3 class="coaches__name">Мария Кетова</h2>
+                    <p class="coaches__text">Crossfit</p>
+                    <ul class="coaches__achives pashkov">
+                      <li class="coaches__achives-item">Certified Level 2 Trainer</li>
+                      <li class="coaches__achives-item">Призёр чемпионата России по CrossFit</li>
+                      <li class="coaches__achives-item">Опыт — 4 года</li>
+                    </ul>
+                </div>
               </div>
-            </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
-        <div class="coaches__coach-container pashkov">
-          <h3 class="coaches__name">Александр Пашков</h2>
-            <p class="coaches__text">Crossfit</p>
-            <ul class="coaches__achives pashkov">
-              <li class="coaches__achives-item">Certified Level 3 Trainer</li>
-              <li class="coaches__achives-item">Победитель чемпионата России по CrossFit</li>
-              <li class="coaches__achives-item">Опыт — 6 лет</li>
-            </ul>
         </div>
       </section>
       <section class="advantages">
@@ -354,7 +382,7 @@
               <p class="promotion__year">Год</p>
               <p class="promotion__price">4999</p>
               <p class="promotion__first-text">Безлимитный абонемент в тренажерный зал</p>
-              <p class="promotion__promotion-link">Подробнее</p>
+              <a href="#"><p class="promotion__promotion-link">Подробнее</p></a>
             </div>
             <div class="promotion__picture-container">
               <picture>
@@ -369,12 +397,12 @@
             <div class="promotion__item-comtainer">
               <h3 class="promotion__sub-title">Месяц бесплатно</h3>
               <p class="promotion__text">Приведи друга, получи абонемент в подарок</p>
-              <p class="promotion__link">Подробнее</p>
+              <a href="#"><p class="promotion__link">Подробнее</p></a>
             </div>
             <div class="promotion__item-comtainer">
               <h3 class="promotion__sub-title">Скидка 20%</h3>
               <p class="promotion__text">Корпоративный фитнес с командой</p>
-              <p class="promotion__link">Подробнее</p>
+              <a href="#"><p class="promotion__link">Подробнее</p></a>
             </div>
           </div>
         </div>
@@ -632,12 +660,12 @@
           </div>
       </section>
       <div class="contacts-container">
-      <form class="form" action="">
+      <form class="form" action="№">
         <h2 class="form__title">Бесплатное занятие</h2>
         <div class="form__input-container">
-        <input class="form__input" type="text" name="firstname" value="Имя">
+        <input class="form__input" id="name" type="text" name="firstname" value="Имя" required>
         <br>
-        <input class="form__input" type="text" name="phone" value="Телефон">
+        <input class="form__input" id="phone" type="text" name="phone" value="Телефон" required>
       </div>
         <br><br>
         <input class="form__send-form" type="submit" value="Отправить">

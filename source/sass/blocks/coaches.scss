@@ -33,7 +33,7 @@
   }
 
   &__coach-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     color: #fff;
@@ -45,20 +45,20 @@
     @media (min-width: $mobile-width) {
       width: 226px;
       height: 255px;
-      top: 60px;
-      left: 50px;
+      top: 0px;
+      left: 46px;
     }
     @media (min-width: $tablet-width) {
-      width: 268px;
-      height: 292px;
-      top: 63px;
-      left: 70px;
+      width: 261px;
+      height: 295px;
+      top: 0px;
+      left: 44px;
     }
     @media (min-width: $desktop-width) {
       width: 226px;
       height: 260px;
-      top: 80px;
-      left: 40px;
+      top: 0px;
+      left: 36px;
     }
   }
 
@@ -168,3 +168,11 @@
 .hidden {
   display: none;
 }
+
+
+
+.coaches__picture-container:hover + .coaches__coach-container,
+.coaches__coach-container:hover {
+display:flex
+}
+
