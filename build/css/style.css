@@ -1213,7 +1213,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #fff000;
   text-decoration: none;
 }
 
@@ -2592,6 +2592,39 @@ button,
   }
 }
 
+.gym__play:hover {
+  display: none;
+}
+
+.gym__play-active {
+  cursor: pointer;
+  position: absolute;
+  display: none;
+}
+@media (min-width: 320px) {
+  .gym__play-active {
+    top: 738px;
+    left: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .gym__play-active {
+    top: 595px;
+    left: 335px;
+  }
+}
+@media (min-width: 1200px) {
+  .gym__play-active {
+    top: 435px;
+    left: 556px;
+  }
+}
+
+.gym__play:hover + .gym__play-active,
+.gym__play-activer:hover {
+  display: block;
+}
+
 .membership {
   position: relative;
   font-family: "RobotoCondensed";
@@ -2792,21 +2825,6 @@ button,
   }
 }
 
-.default-option {
-  border: 10px solid rgb(209, 10, 66);
-  -o-border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
-     border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(99, 11, 154)), to(rgb(0, 53, 159)));
-     border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
-  border-image-slice: 1;
-}
-
-.default-option-buy {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(99, 11, 154)), to(rgb(0, 53, 159)));
-  background: linear-gradient(to right, rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
-  color: #fff;
-  border: 0px;
-}
-
 .month-default {
   -webkit-box-shadow: 0px 2px 0px #D10A42;
           box-shadow: 0px 2px 0px #D10A42;
@@ -2814,6 +2832,23 @@ button,
 
 .hidden {
   display: none;
+}
+
+.membership__option-wrapper:hover {
+  border: 10px solid rgb(209, 10, 66);
+  -o-border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+     border-image: -webkit-gradient(linear, left top, right bottom, from(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(99, 11, 154)), to(rgb(0, 53, 159)));
+     border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+  border-image-slice: 1;
+}
+
+.membership__buy:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), color-stop(rgb(209, 10, 66)), color-stop(rgb(99, 11, 154)), to(rgb(0, 53, 159)));
+  background: linear-gradient(to right, rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+  color: #fff;
+  border: 0px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .competitive {
@@ -3013,6 +3048,10 @@ button,
   }
 }
 
+.competitive__application-link {
+  color: #fff;
+}
+
 .coaches {
   font-family: "RobotoCondensed";
   position: relative;
@@ -3052,9 +3091,7 @@ button,
   }
 }
 .coaches__coach-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3072,24 +3109,24 @@ button,
   .coaches__coach-container {
     width: 226px;
     height: 255px;
-    top: 60px;
-    left: 50px;
+    top: 0px;
+    left: 46px;
   }
 }
 @media (min-width: 768px) {
   .coaches__coach-container {
-    width: 268px;
-    height: 292px;
-    top: 63px;
-    left: 70px;
+    width: 261px;
+    height: 295px;
+    top: 0px;
+    left: 44px;
   }
 }
 @media (min-width: 1200px) {
   .coaches__coach-container {
     width: 226px;
     height: 260px;
-    top: 80px;
-    left: 40px;
+    top: 0px;
+    left: 36px;
   }
 }
 @media (min-width: 320px) {
@@ -3212,6 +3249,13 @@ button,
 
 .hidden {
   display: none;
+}
+
+.coaches__picture-container:hover + .coaches__coach-container,
+.coaches__coach-container:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .advantages {
@@ -3578,6 +3622,7 @@ button,
 }
 .promotion__promotion-link {
   cursor: pointer;
+  color: #fff;
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
   font-weight: bolder;
@@ -3603,6 +3648,7 @@ button,
 }
 .promotion__link {
   cursor: pointer;
+  color: #1C3374;
   text-transform: uppercase;
   border-bottom: 1px solid #1C3374;
   font-weight: bolder;
@@ -3720,6 +3766,14 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.promotion__promotion-link:hover {
+  opacity: 0.5;
+}
+
+.promotion__link:hover {
+  opacity: 0.5;
 }
 
 .faq {
@@ -4190,6 +4244,7 @@ button,
     width: 50%;
     height: 50%;
     padding-bottom: 0px;
+    border-top: 1px solid #74819C;
   }
 }
 .contacts__title {

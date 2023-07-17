@@ -151,22 +151,23 @@
 }
 }
 
-.default-option{
-  border: 10px solid rgb(209, 10, 66);
-  border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
-  border-image-slice: 1;
-}
-
-.default-option-buy{
-  background: linear-gradient(to right, rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
-  color: #fff;
-  border: 0px;
-}
-
 .month-default{
   box-shadow: 0px 2px 0px #D10A42;
 }
 
 .hidden{
   display: none;
+}
+
+.membership__option-wrapper:hover{
+  border: 10px solid rgb(209, 10, 66);
+  border-image: linear-gradient(to right bottom, rgb(209, 10, 66), rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+  border-image-slice: 1;
+}
+
+.membership__buy:hover{
+  background: linear-gradient(to right, rgb(209, 10, 66), rgb(209, 10, 66), rgb(99, 11, 154), rgb(0, 53, 159));
+  color: #fff;
+  border: 0px;
+  transition: 0.5s ease;
 }

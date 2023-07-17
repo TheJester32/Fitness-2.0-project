@@ -6,7 +6,7 @@ Swiper.use([Navigation]);
 const swiper = new Swiper('.swiper-comments', {
 
   direction: 'horizontal',
-  loop: true,
+  loop: false,
 
   navigation: {
     nextEl: '.swiper-button-next',
